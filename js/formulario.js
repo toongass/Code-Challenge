@@ -30,11 +30,12 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .then(response => response.json())
         .then(data => {
-            // Mostrar la respuesta del servidor en la página
-            respuestaDiv.innerHTML = `<p>Respuesta del servidor:</p><pre>${JSON.stringify(data, null, 2)}</pre>`;
+            console.log('Respuesta del servidor:', data);
+            alert('Formulario enviado con éxito');
         })
         .catch(error => {
-            console.error('Error al enviar los datos:', error);
+            console.error('Error:', error);
+            alert('Hubo un error al enviar el formulario');
         });
     });
 });
