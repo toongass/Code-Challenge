@@ -1,0 +1,15 @@
+#formulario {
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 208px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;      
+}
+
+button {
+    margin: 2px 2px;
+}
